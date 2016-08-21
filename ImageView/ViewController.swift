@@ -19,6 +19,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        imgOn  = UIImage(named: "lamp_on.png")
+        imgOff = UIImage(named: "lamp_off.png")
+        
+        imgView.image = imgOn
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,9 +32,30 @@ class ViewController: UIViewController {
     }
 
     @IBAction func btnResizeImage(sender: UIButton) {
+        let scale:CGFloat = 2.0
+        var newWidth:CGFloat, newHeight:CGFloat
+        
+        if (isZoom){ //true
+            newWidth = imgView.frame.width/scale
+            newHeight = imgView.frame.height/scale
+            imgView.frame.size = CGSize(width: newWidth, height: newHeight)
+            btnResize.setTitle("확대", forState: .Normal)
+        }
+        else{ //false
+            newWidth = imgView.frame.width*scale
+            newHeight = imgView.frame.height*scale
+            imgView.frame.size = CGSize(width: newWidth, height: newHeight)
+            btnResize.setTitle("축소", forState: .Normal)
+        }
+        isZoom = !isZoom
     }
 
     @IBAction func swt(sender: UISwitch) {
+        if sender.on{
+            imgView.image = imgOn
+        } else {
+            imgView.image = imgOff
+        }
     }
     
 }
