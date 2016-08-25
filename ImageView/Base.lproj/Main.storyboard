@@ -28,8 +28,8 @@
                                     <action selector="swhImageOnOff:" destination="BYZ-38-t0r" eventType="valueChanged" id="ksQ-t3-1On"/>
                                 </connections>
                             </switch>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="ILp-WH-Kma">
-                                <rect key="frame" x="20" y="20" width="129" height="176"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="V86-dz-UiE">
+                                <rect key="frame" x="8" y="12" width="143" height="198"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -37,7 +37,7 @@
                     </view>
                     <connections>
                         <outlet property="btnResize" destination="SkL-Ts-6ge" id="dFL-dL-63i"/>
-                        <outlet property="imgView" destination="ILp-WH-Kma" id="hg2-XL-Pwf"/>
+                        <outlet property="ivwLamp" destination="V86-dz-UiE" id="t1l-Dl-gcw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
