@@ -25,7 +25,7 @@
                                 <rect key="frame" x="221" y="403" width="51" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <action selector="swt:" destination="BYZ-38-t0r" eventType="valueChanged" id="GaM-tE-Q5n"/>
+                                    <action selector="swhImageOnOff:" destination="BYZ-38-t0r" eventType="valueChanged" id="ksQ-t3-1On"/>
                                 </connections>
                             </switch>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="ILp-WH-Kma">
