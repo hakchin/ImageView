@@ -28,7 +28,7 @@
                                     <action selector="swhImageOnOff:" destination="BYZ-38-t0r" eventType="valueChanged" id="ksQ-t3-1On"/>
                                 </connections>
                             </switch>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="V86-dz-UiE">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="V86-dz-UiE">
                                 <rect key="frame" x="8" y="12" width="143" height="198"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
